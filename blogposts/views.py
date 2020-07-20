@@ -1,12 +1,14 @@
 from django.shortcuts import render
 
+from .models import Post, Category
 
 # Create your views here.
-def blogs(request):
-    return render(request, 'blogs/blogs.html')
-
 def home(request):
     return render(request,'blogs/home.html')
+
+def blogs(request, category):
+    posts = Post.objects.get(category = category)
+    return render(request, 'blogs/blogs.html', {'cat': category, 'posts': posts})
 
 
 

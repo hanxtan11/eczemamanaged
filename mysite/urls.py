@@ -19,6 +19,6 @@ from blogposts import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blogposts', views.blogs, name="blogs"),
+    path('blogposts/<int:category>/', views.blogs, name="blogs"),
     path('', views.home, name="home"),
 ]
