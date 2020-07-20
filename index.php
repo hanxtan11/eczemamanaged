@@ -1,1 +1,1 @@
-<?php include_once("blogposts/templates/home.html"); ?>
+<?php include_once("blogposts/templates/blogs/home.html"); ?>
