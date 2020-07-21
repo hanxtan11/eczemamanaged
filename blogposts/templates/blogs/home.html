@@ -24,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; font-family: 'Courier New', Courier, monospace;">
         <a class="navbar-brand" href="#" style="font-weight: bold;">
-            <img src="static/logo.jpg" width="140px">
+            <img src="{% static 'logo.jpg' %}" width="140px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,11 +43,11 @@
                 Blogposts
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Facial Care</a>
-                <a class="dropdown-item" href="#">Body Care</a>
-                <a class="dropdown-item" href="#">Selfcare</a>
+                <a class="dropdown-item" href="{% url 'blogposts' 0 %}">Facial Care</a>
+                <a class="dropdown-item" href="{% url 'blogposts' 1 %}">Body Care</a>
+                <a class="dropdown-item" href="{% url 'blogposts' 2 %}">Selfcare</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Diet & Food</a>
+                <a class="dropdown-item" href="{% url 'blogposts' 3 %}">Diet & Food</a>
               </div>
             </li>
             <li class="nav-item">
@@ -72,21 +72,21 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="static/front.jpg" style="opacity: 0.4" class="d-block w-100" alt="...">
+            <img src="{% static 'front.jpg' %}" style="opacity: 0.4" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 style="font-weight: bold; color: black;">Welcome</h5>
               <p style="color: black;">Welcome to Michelle + Hannah's Blog where we share our journey to treating our eczema and hopefully help you treat yours</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="static/front2.jpg" class="d-block w-100" alt="...">
+            <img src="{% static 'front2.jpg' %}" style="opacity: 0.4" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 style="font-weight: bold;">Skincare</h5>
               <p>Cleansers, Moisturizers, Serums to relieve eczema</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="static/front3.jpg" class="d-block w-100" alt="...">
+            <img src="{% static 'front3.jpg' %}" style="opacity: 0.4" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 style="font-weight: bold;">Selfcare</h5>
               <p>Where we talk about all aspects of treating yourself from food to alternative treatments</p>
