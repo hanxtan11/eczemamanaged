@@ -1,1 +1,1 @@
-<?php header( 'Location: /blogposts/templates/blogs/home.html' ); ?>
+<?php header( 'Location: /blogposts/templates/blogs/home.html' ) ; ?>
