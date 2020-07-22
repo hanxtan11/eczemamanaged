@@ -23,4 +23,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blogposts/<int:category>/', views.blogs, name="blogs"),
     path('', views.home, name="home"),
-] + static(MEDIA_URL, document_root=MEDIA_ROOT)
+]
